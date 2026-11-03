@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumpulan Tugas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pengumpulan Tugas</h1>
+    <p>Silakan isi formulir pengumpulan tugas.</p>
+
+    <form id="formTugas">
+      <label>Nama Mahasiswa</label>
+      <input type="text" id="nama" required>
+
+      <label>NIM</label>
+      <input type="text" id="nim" required>
+
+      <label>Kelas</label>
+      <input type="text" id="kelas" required>
+
+      <label>Mata Kuliah</label>
+      <input type="text" id="matakuliah" required>
+
+      <label>Nama Tugas</label>
+      <input type="text" id="tugas" required>
+
+      <label>Upload File</label>
+      <input type="file" id="file"
+        accept=".pdf,.doc,.docx,.ppt,.pptx,.zip" required>
+
+      <button type="submit" id="btnKirim">
+        Kirim Tugas
+      </button>
+
+      <p id="pesan"></p>
+    </form>
+  </div>
+
+</body>
+</html>
